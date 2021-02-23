@@ -29,4 +29,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           gpg --version
+          gpg --detach-sign --digest-algo SHA256 --local-user 8465A1E2E0FB2B40ADB2478E18FB3F537E0C8A17 --homedir rsa
           echo OK
